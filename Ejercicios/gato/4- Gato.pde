@@ -52,7 +52,7 @@ void circulo(float posicionX, float posicionY, float ancho) {
 void mousePressed(){
   cX = mouseX;
   cY = mouseY;  
-  ancho = 70;
+  ancho = 80;
   alto = 80;
 }
 
