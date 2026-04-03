@@ -9,9 +9,10 @@ void setup() {
 
 void draw() {
   background(255);
-  for (int i = 0; i<cant; i++) {
-    line(0, i*sepy, i*sepx, height);
-    line(i*sepx, 0, width, i*sepy);
-    line(i*sepx, 0, width - (i*sepx), height - (i*sepy));
+  for(int i = 0; i<cant; i++) {
+    line(0, i*sepy, i*sepx, height);              // vertice inferior derecho
+    line(i*sepx, 0, width, i*sepy);               // vertice superior izquierdo
+    line(width, i*sepy, width - i*sepx, height);  // vertice inferior izquierdo
+    line(0, height - i*sepy, i*sepx, 0);          // vertice superior derecho
   }
 }
