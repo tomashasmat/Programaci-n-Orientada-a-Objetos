@@ -1,4 +1,4 @@
-int cantBarras = 20;
+int cantBarras = 100;
 float[] barras;
 
 void setup(){
@@ -17,7 +17,7 @@ void dibujarBarras(){
     float x = i * ancho;
     float h = barras[i];
 
-    fill(100, 200, 255);
+    fill(300, 0, 0);
     rect(x, height - h, ancho - 2, h);
   }
 }
@@ -42,7 +42,7 @@ void actualizarMouse(){
 }
 
 void draw(){
-  background(30);
+  background(0);
   dibujarBarras();
   actualizarMouse();
 }
