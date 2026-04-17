@@ -10,12 +10,6 @@ void setup(){
   }
 }
 
-void draw(){
-  background(30);
-  dibujarBarras();
-  actualizarMouse();
-}
-
 void dibujarBarras(){
   float ancho = width / (float)cantBarras;
 
@@ -46,3 +40,10 @@ void actualizarMouse(){
     }
   }
 }
+
+void draw(){
+  background(30);
+  dibujarBarras();
+  actualizarMouse();
+}
+
