@@ -24,7 +24,7 @@ void calcularDistancias(){
   }
 }
 
-void dibujarGrilla() {
+void grilla() {
   float sepX = width / (float)cantCol;
   float sepY = height / (float)cantFil;
   float distMax = dist(0, 0, width, height);
@@ -48,5 +48,5 @@ void draw(){
   background(0);
   
   calcularDistancias();
-  dibujarGrilla();
+  grilla();
 }
